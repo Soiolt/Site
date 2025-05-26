@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <link rel="stylesheet" href="styles.css">
+     <title>Конкулятор</title>
+</head>
+<body>
+<form>
+
+  <div class="row mb-3">
+    <div class="form-group col-md-6 col-sm-6">
+      <p class="badge badge-warning">Вес (кг/тонн)</p>
+      <input type="number" name="weight" class="form-control" id="weight" required placeholder="Напишите вес" />
+    </div>
+    <div class="form-group col-md-6 col-sm-6">
+      <p class="badge badge-warning">Объем (куб²)</p>
+      <input type="number" name="volume" id="vol" class="form-control" placeholder="Напишите объем" required />
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-md-12">
+      <p class="badge badge-warning">Дополнительные услуги</p>
+    </div>
+    
+    <div class="col-md-4 col-sm-4">
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" id="load" name="services[]" class="custom-control-input" value="loading" />
+        <label class="custom-control-label" for="load">Нужна погрузка</label>
+      </div>
+    </div>
+    
+    <div class="col-md-4 col-sm-4">
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" id="del" name="services[]" class="custom-control-input" value="delivery" />
+        <label class="custom-control-label" for="delivery">Доставка до места</label>
+      </div>
+    </div>
+    
+    <div class="col-md-4 col-sm-4">
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" id="frag" name="services[]" class="custom-control-input" value="fragile" />
+        <label class="custom-control-label" for="fragile">Хрупкий груз</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-md-12 text-center">
+      <h4>Стоимость доставки:</h4>
+      <p><strong id="out">0.00<p>₽</p></strong></p>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-md-12 text-center">
+      <button type="button" name="adress" class="btn-block btn btn-primary" id="btn">Рассчитать стоимость</button>
+    </div>
+  </div>
+
+</form>
+<script src="calculator.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+</body>
+
+</html>

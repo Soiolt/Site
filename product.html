@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Туйгун экспресс</title>
+</head>
+
+<body>
+    <!--Preloader start-->
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+    </div>
+    <!--Preloader end-->
+
+    <!--Header start-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="img/logo.svg" alt="logo" class="nav__logo-img">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">О нас</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="product.html" class="nav__link active-link">Услуги</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="reviews.html" class="nav__link">Отзывы</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Контакты</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </div>
+        </nav>
+    </header>
+    <!--Header end-->
+
+    <!--Home start-->
+    <main class="main">
+        <!--About start-->
+        <section class="about section container" id="">
+            <div class="about__container grid">
+                <div class="about__data">
+                    <h2 class="section__title about__title">
+                        О доставке груза
+                    </h2>
+
+                    <p class="about__description">
+                        Наша команда предоставляет услуги доставки грузов по маршруту Москва - Якутск
+                    </p>
+
+                    <div class="about__details">
+                        <p class="about__details-description">
+                            Какие работы ведутся при работе с грузом?
+                        </p>
+                        <p class="about__details-description">
+                            1. Получаем запрос от Вас, определяемся с задачей
+                        </p>
+                        <p class="about__details-description">
+                            2. Ведем переговоры с поставщиком и берем товар
+                        </p>
+                        <p class="about__details-description">
+                            3. Принимаем товар на наш склад
+                        </p>
+                        <p class="about__details-description">
+                            4. Доставляем в Якутск
+                        </p>
+                    </div>
+
+                    <p class="about__description">
+                        По договоренности возможна доставка в улусы
+                        <br>Свяжитесь с нами сегодня и мы обеспечим быструю и надежную доставку!
+                    </p>
+
+                    <a href="contact.html" class="button--link button--flex">
+                        Связаться с нами <i class="ri-arrow-right-down-line button__icon"></i>
+                    </a>
+                </div>
+                <img src="img/product1.png" alt="" class="about__img">
+            </div>
+        </section>
+
+        <section class="about section container" id="">
+            <div class="about__container grid">
+                <img src="img/product2.png" alt="" class="about__img">
+                <div class="about__data">
+                    <h2 class="section__title about__title">
+                        О срочных документах
+                    </h2>
+
+                    <p class="about__description">
+                        Команда "Туйгун экспресс" оказывает услуги экспресс-доставки документов и вещей из Москвы в Якутск.
+                        Мы работаем 7 дней в неделю, чтобы удовлетворить все Ваши потребности в доставке.
+                        Свяжитесь с нами сегодня и мв обеспечим быструю и надежную доставку Ваших документов.
+                    </p>
+                    <a href="contact.html" class="button--link button--flex">
+                        Связаться с нами <i class="ri-arrow-right-down-line button__icon"></i>
+                    </a>
+                </div>
+
+                <div class="about__data">
+                    <h2 class="section__title about__title">
+                        О сроках доставки
+                    </h2>
+
+                    <p class="about__description">
+                        Зачастую многих волнуют сроки доставки груза. Нам всем надо, чтобы товар дошел до нас в кратчайшие сроки.
+                        Именно поэтому сразу после оформления заказа наша команда отправит Ваш заказ на завтрашний день!
+                        В итоге, сроки ожидания составляют всего 1-2 дня с момента оформления заказа 
+                        (p.s возможна задержка на 3-4 дня с большими грузами).
+                    </p>
+                    <a href="contact.html" class="button--link button--flex">
+                        Связаться с нами <i class="ri-arrow-right-down-line button__icon"></i>
+                    </a>
+                </div>
+                <img src="img/product3.png" alt="" class="about__img">
+            </div>
+        </section>
+        <!--About end-->
+
+        <!--Product start-->
+        <section class="product section container" id="">
+            <h2 class="section__title-center">
+                Наши услуги
+            </h2>
+
+            <div class="steps__container grid">
+                <div class="product__card">
+                    <h3 class="product__card-title">Авиаперевозка грузов</h3>
+                    <p class="product__card-description">
+                        Транспортировка грузов различного объема и веса
+                    </p>
+                    <a href="contact.html" class="product__button">
+                        Связаться с нами
+                    </a>
+                </div>
+
+                <div class="product__card">
+                    <h3 class="product__card-title">Экспресс-доставка</h3>
+                    <p class="product__card-description">
+                        Для срочных отправлений документов, вещей
+                    </p>
+                    <a href="contact.html" class="product__button">
+                        Связаться с нами
+                    </a>
+                </div>
+
+                <div class="product__card">
+                    <h3 class="product__card-title">Доставка в улусы</h3>
+                    <p class="product__card-description">
+                        Доставка груза в улусы Республики Якутия (Саха)
+                    </p>
+                    <a href="contact.html" class="product__button">
+                        Связаться с нами
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--Product end-->
+
+        <!--Questiuons start-->
+        <section class="questions section">
+            <h2 class="section__title-center questions__title container">
+                Часто задаваемые вопросы
+            </h2>
+
+            <div class="questions__container container grid">
+                <div class="questions__group">
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                Как вы разрабатываете индивидуальное предложение?
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Анализируем ваши требования и создаем кастомизированное предложение,
+                                которое включает необходимые услуги и условия, соответствующие вашим нуждам
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                Как вы контролируете качество доставки?
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Проводим контроль качества на всех этапах транспортировки,
+                                чтобы гарантировать, что ваш груз будет доставлен в соответствии с вашими стандартами
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                Какие услуги вы предлагаете в рамках перевозки?
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Предлагаем широкий спектр услуг, включая грузоперевозки, упаковку,
+                                хранение
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="questions__group">
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                Какова ваша политика по задержкам с доставкой?
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                В случае задержек или проблем с доставкой мы немедленно
+                                уведомляем вас и предоставляем информацию о причинах
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Questiuons end-->
+    </main>
+    <!--Home end-->
+
+    <!--Footer start-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <img src="img/logo.svg" alt="logo" class="nav__logo-img">
+                </a>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Адрес</h3>
+
+                <ul class="footer__data">
+                    <li class="footer__information">г. Москва</li>
+                    <li class="footer__information">ул. Пушкина 45/7</li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Контакты</h3>
+
+                <ul class="footer__data">
+                    <div class="footer__social">
+                        <a href="https://t.me/" class="footer__social-link">
+                            <i class="ri-telegram-fill"></i>
+                        </a>
+                        <a href="https://wa.me/" class="footer__social-link">
+                            <i class="ri-whatsapp-fill"></i>
+                        </a>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    Мы принимаем
+                </h3>
+
+                <div class="footer__cards">
+                    <img src="img/card1.png" alt="" class="footer__card">
+                    <img src="img/card2.png" alt="" class="footer__card">
+                    <img src="img/card3.png" alt="" class="footer__card">
+                </div>
+            </div>
+        </div>
+        <p class="footer__copy">&#169; Все права защищены</p>
+    </footer>
+    <!--Footer end-->
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-fill scrollup__icon"></i>
+    </a>
+
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
