@@ -103,3 +103,25 @@ window.onload = function () {
       document.body.classList.remove('loaded_hiding');
     }, 500);
 }
+
+function sendMail(event) {
+    event.preventDefault(); // чтобы форма не отправлялась по умолчанию
+
+    const email = document.getElementById('email').value.trim();
+    const name = document.getElementById('name').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (!email || !name || !message) {
+      alert('Пожалуйста, заполните все поля');
+      return;
+    }
+
+    const subject = encodeURIComponent('Сообщение с сайта');
+    const body = encodeURIComponent(`Имя: ${name}\nEmail: ${email}\n\nСообщение:\n${message}`);
+
+    // Формируем mailto ссылку
+    const mailtoLink = `mailto:verianadamova@gmail.com?subject=${subject}&body=${body}`;
+
+    // Открываем почтовый клиент с письмом
+    window.location.href = mailtoLink;
+  }
