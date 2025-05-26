@@ -120,7 +120,7 @@ function sendMail(event) {
     const body = encodeURIComponent(`Имя: ${name}\nEmail: ${email}\n\nСообщение:\n${message}`);
 
     // Формируем mailto ссылку
-    const mailtoLink = `mailto:verianadamova@gmail.com?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:amova@gmail.com?subject=${subject}&body=${body}`;
 
     // Открываем почтовый клиент с письмом
     window.location.href = mailtoLink;
